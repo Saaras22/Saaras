@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Events | Event Planner</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #2c2323;
+            color: #4e4e4e;
+        }
+
+        /* HEADER */
+        header {
+            background: url('https://images.unsplash.com/photo-1529634895091-1d2a8d7d1805?auto=format&fit=crop&w=1600&q=80')
+                        center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            z-index: 2;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            z-index: 2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ffb400;
+            color: #000;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            z-index: 2;
+        }
+
+        /* SERVICES SECTION */
+        .section {
+            padding: 60px 10%;
+            text-align: center;
+            @media(max-width) {
+                
+            }
+        }
+        .section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .service-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .service-box h3 {
+            margin-bottom: 10px;
+        }
+        .service-box p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* ABOUT SECTION */
+        .about-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .about-container img {
+            width: 45%;
+            border-radius: 10px;
+            min-width: 280px;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 280px;
+        }
+        .about-text p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <div>
+            <h1>Dream Events</h1>
+            <p>Making Your Celebrations Beautiful, Memorable & Stress-Free</p>
+            <a href=""><h3 style="background: #ffb400;">Book Now</h3></a>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <h2 style="color: aliceblue;">Our Event Planning Services</h2>
+
+        <div class="services">
+            <div class="service-box">
+                <h3>Wedding Planning</h3>
+                <p>Elegant setups, flawless coordination, and unforgettable moments tailored to your dream wedding.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Corporate Events</h3>
+                <p>Professional meetings, product launches & annual events designed with precision and style.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Birthday Parties</h3>
+                <p>Fun, creative & fully personalized birthday celebrations for all age groups.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Decor & Styling</h3>
+                <p>Premium décor themes, floral artistry & modern styling for any event.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <h2 style="color: aliceblue;" , align="left">About Us</h2>
+
+        <div class="about-container">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=80" alt="Event planning">
+            
+            <div class="about-text">
+                <p style="color: aliceblue;">
+                    At <strong>Dream Events</strong>, we turn your ideas into beautifully organized celebrations.
+                    With years of experience, a creative team, and a passion for perfection, we handle everything —
+                    from concept to execution — so you can enjoy your special day stress-free.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>Contact Us: info@dreamevents.com | +123-456-7890</p>
+        <p>© 2025 Dream Events. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
